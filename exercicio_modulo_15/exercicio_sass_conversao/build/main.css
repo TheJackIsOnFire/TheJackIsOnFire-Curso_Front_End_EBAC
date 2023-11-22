@@ -49,10 +49,11 @@ section {
   padding: 56px 0;
 }
 section .products {
+  column-gap: 1%;
+  column-gap: 1%;
   margin-top: 40px;
   display: grid;
   grid-template-columns: repeat(3, 32.66%);
-  column-gap: 1%;
   row-gap: 4%;
   width: 100%;
 }
@@ -79,8 +80,13 @@ section .products .product-button:hover {
     max-width: 80%;
   }
   .container .products {
+    column-gap: 1%;
+    column-gap: 1%;
+    margin-top: 40px;
+    display: grid;
     grid-template-columns: repeat(2, 48.5%);
-    column-gap: 3%;
+    row-gap: 4%;
+    width: 100%;
   }
 }
 @media screen and (max-width: 767px) {
@@ -88,10 +94,13 @@ section .products .product-button:hover {
     max-width: 80%;
   }
   .container .products {
+    column-gap: 1%;
+    column-gap: 1%;
+    margin-top: 40px;
+    display: grid;
     grid-template-columns: repeat(1, 95%);
-    column-gap: 2.5%;
-  }
-  .container .products {
+    row-gap: 4%;
+    width: 100%;
     display: block;
   }
   .container .products .product-item {

@@ -1,8 +1,17 @@
 @use './config/resert.scss';
 @use './config/variaveis.scss';
 
-@mixin layoutGradeProdutos() {
-    
+@mixin columnGap($columnGap: 1%) {
+    column-gap: 1%;
+}
+
+@mixin layoutGradeProdutos($gridTemplateColumns: repeat(3, 32.66%)) {
+    @include columnGap(1%);
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: $gridTemplateColumns;
+    row-gap: 4%;
+    width: 100%;
 }
 
 body {
@@ -56,12 +65,8 @@ section {
     padding: 56px 0;
 
     .products {
-        margin-top: 40px;
-        display: grid;
-        grid-template-columns: repeat(3, 32.66%);
-        column-gap: 1%;
-        row-gap: 4%;
-        width: 100%;
+        @include columnGap(1%);
+        @include layoutGradeProdutos(repeat(3, 32.66%));
 
         img {
             width: 100%;
@@ -90,8 +95,8 @@ section {
         max-width: 80%;
 
         .products {
-            grid-template-columns: repeat(2, 48.5%);
-            column-gap: 3%;
+            @include columnGap(3%);
+            @include layoutGradeProdutos(repeat(2, 48.5%));
         }
     }
 }
@@ -101,16 +106,13 @@ section {
         max-width: 80%;
 
         .products {
-            grid-template-columns: repeat(1, 95%);
-            column-gap: 2.5%;
-        }
-    
-        .products {
-            display: block;
+            @include columnGap(2.5%);
+            @include layoutGradeProdutos(repeat(1, 95%));
+            display: block;          
 
             .product-item  {
                 margin-bottom: 32px;
             }
-        }
+        }        
     }
 }
