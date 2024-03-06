@@ -1,0 +1,36 @@
+@use "./config/base.scss";
+@use "./config/states.scss";
+@use "./config/layout.scss";
+@use "./config/modules.scss";
+@use "./config/themes.scss";
+
+* {
+    @include base.reset();
+}
+
+body {
+    @include themes.themeWhiteBody();
+}
+
+.products {
+    @include layout.section__products();
+
+    &__is--highlight {
+        @include states.products__is--highlight();
+    }
+
+    &__item {
+        
+        &__image {
+            @include modules.products__item__image();
+        }
+
+        &__name {
+            @include modules.products__item__name();
+        }
+
+        &__description {
+            @include modules.products__item__description();
+        }
+    }
+}

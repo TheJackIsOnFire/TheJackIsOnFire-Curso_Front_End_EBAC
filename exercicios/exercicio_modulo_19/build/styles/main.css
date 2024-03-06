@@ -1,0 +1,2 @@
+*{padding:0;margin:0;box-sizing:border-box;font-family:"Roboto",sans-serif}body{background-color:#fff}.products{max-width:640px;width:100%;margin:56px auto;display:grid;grid-template-columns:33% 33% 33%;grid-column-gap:1%}.products__is--highlight{border:2px solid gold;padding:8px;background-color:#ffff42}.products__item__image{width:100%}.products__item__name{font-size:1.2em;margin:8px 0}.products__item__description{color:gray}
+/*# sourceMappingURL=maps/main.css.map */

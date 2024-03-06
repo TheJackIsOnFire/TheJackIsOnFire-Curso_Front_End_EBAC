@@ -1,0 +1,19 @@
+//fonte
+$fonteDeTexto: "Roboto", sans-serif;
+
+//reset
+@mixin reset() {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: $fonteDeTexto;
+}
+
+//cores__variaveis
+$colorBackGround: #fff;
+$colorProductsItemDescription:gray;
+
+//cores__modificador__is--hightlight
+$colorIsHighlight: gold;
+$colorIsHighlightBackGround:#ffff42;
+

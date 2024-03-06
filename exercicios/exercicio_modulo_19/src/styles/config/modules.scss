@@ -1,0 +1,17 @@
+@use "./base.scss";
+//elementos 
+
+//elementos__products__item 
+
+@mixin products__item__image() {
+    width: 100%;
+}
+
+@mixin products__item__name() {
+    font-size: 1.2em;
+    margin: 8px 0;
+}
+
+@mixin products__item__description() {
+    color: base.$colorProductsItemDescription;
+}

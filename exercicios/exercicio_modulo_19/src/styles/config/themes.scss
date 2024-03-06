@@ -1,0 +1,17 @@
+//temas
+
+//cor__de__fundo_da__pagina
+
+//tema__escuro
+@mixin themeBlackBody() {
+    background-color: black;
+
+    .products__item__name {
+        color: gray;
+    }
+}
+
+//tema__claro
+@mixin themeWhiteBody() {
+    background-color: white;
+}

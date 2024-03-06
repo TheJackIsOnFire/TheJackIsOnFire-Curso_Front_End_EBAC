@@ -1,0 +1,11 @@
+@use "./base.scss";
+
+//modificadores
+
+//modificadores__products__is--highlight
+
+@mixin products__is--highlight() {
+    border: 2px solid base.$colorIsHighlight;
+    padding: 8px;
+    background-color: base.$colorIsHighlightBackGround;
+}
